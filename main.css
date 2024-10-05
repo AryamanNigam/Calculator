@@ -5,7 +5,6 @@ body{
 
 #container{
     box-sizing: border-box;
-    border: 1px solid black;
     height: 450px;
     width: 300px;
     border-radius: 10px;
@@ -19,8 +18,8 @@ body{
     margin: 10px;
     margin-bottom: 5px;
     box-sizing: border-box;
-    border: 1px solid black;
-    height: 130px;
+
+    height: 110px;
     width: 280px;
     border-radius: 10px;
     background-color: white;
@@ -35,15 +34,55 @@ body{
     width: 280px;
     border-radius: 10px;
     background-color: beige;
+    background-color: rgb(70, 70, 70);
     display: flex;
     flex-direction: column;
 }
 
 .row{
     display: flex;
-    background-color: aliceblue;
-    border: 1px solid black;
     height: 40px;
     width: 280px;
     flex-grow: 1;
+
+}
+
+.calcbuttons{
+    flex-basis: 25%;
+    border-radius: 10px;
+    gap: 5px;
+    flex-shrink: 0;
+    color: white;
+    font-weight: 900;
+}
+
+.calcbuttons.operations{
+    background-color: orange;
+}
+
+.calcbuttons.numbers{
+    background-color: rgb(18, 18, 100);
+    color: white;
+    font-weight: 900;
+}
+
+#enter{
+    flex-basis: 50%;
+    background-color: green;
+}
+
+#clear{
+    background-color: #1e9181;
+}
+
+#back{
+    background-color: rgb(114, 12, 12);
+}
+
+#toggle{
+    background-color: #1e9181;
+}
+
+#decimal{
+    background-color: #1e9181;
 }
