@@ -1,28 +1,35 @@
 body{
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 #container{
     box-sizing: border-box;
-    height: 450px;
+    height: 400px;
     width: 300px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(43, 40, 40);
 }
 
 #screen{
-
+    overflow: hidden;
     margin: 10px;
     margin-bottom: 5px;
     box-sizing: border-box;
 
-    height: 110px;
+    height: 100px;
     width: 280px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgba(177, 218, 161, 0.541);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 40px;
+
 }
 
 #button-layout{
@@ -33,10 +40,9 @@ body{
     height: 280px;
     width: 280px;
     border-radius: 10px;
-    background-color: beige;
-    background-color: rgb(70, 70, 70);
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
 
 .row{
@@ -44,16 +50,15 @@ body{
     height: 40px;
     width: 280px;
     flex-grow: 1;
-
 }
 
 .calcbuttons{
     flex-basis: 25%;
     border-radius: 10px;
-    gap: 5px;
     flex-shrink: 0;
     color: white;
     font-weight: 900;
+    border: 1px solid black;
 }
 
 .calcbuttons.operations{
@@ -62,8 +67,6 @@ body{
 
 .calcbuttons.numbers{
     background-color: rgb(18, 18, 100);
-    color: white;
-    font-weight: 900;
 }
 
 #enter{
@@ -86,3 +89,4 @@ body{
 #decimal{
     background-color: #1e9181;
 }
+
